@@ -1,0 +1,44 @@
+.container{
+    width: 100%;
+    display: flex;
+    margin-top:5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+.Products{
+    width: 70%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.Products img{
+    width: 350px;
+    height: 300px;
+}
+.Products button{
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border:2px solid rgb(99, 156, 55)
+}
+.Products button:hover{
+    background-color: brown;
+    color: #ffff;
+}
+.card-calculation{
+    width: 30%;
+    height: 500px;
+    color: rgb(6, 12, 0);
+    background-color: rgb(241, 71, 15);
+    
+}
+.card-calculation h2{
+    /* display: inline; */
+    background-color: darkmagenta;
+    padding: 10px;
+    border-radius: 5px;
+    border:2px dotted gray
+}
