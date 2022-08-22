@@ -23,7 +23,13 @@ const Card = () => {
         const restItems=tShart.filter(Tshart=> Tshart._id !== seletedItems._id);
         setTshart(restItems);
     }
-    
+    const RemoveAll=()=>{
+
+        let items=tShart;
+        items=[];
+        setTshart(items);
+
+     }
     return (
         <div>
              <h1>This mariya t-shart : {teshart.length} </h1>
@@ -39,7 +45,9 @@ const Card = () => {
             </div>
             <div className='card-calculation'>
                <RevewCard tShart={tShart}
-               removeItem={removeItem}></RevewCard>
+               removeItem={removeItem}
+               RemoveAll={ RemoveAll}
+               ></RevewCard>
                 
             </div>
             </div>
